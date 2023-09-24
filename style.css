@@ -62,3 +62,38 @@ a {
 nav {
   margin: 10px;
 }
+@media (max-width: 425px) {
+  h1 {
+    font-size: 64px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .hello {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+  a {
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .col {
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .my-projects {
+    padding-top: 20px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
