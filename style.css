@@ -1,12 +1,8 @@
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: "Inknut Antiqua", serif;
   text-align: center;
   background: linear-gradient(to bottom, #e1e6ff, white);
+  background-repeat: no-repeat;
 }
 h1 {
   font-size: 96px;
@@ -44,9 +40,7 @@ h2 {
   font-size: 48px;
   text-align: center;
 }
-.projects {
-  background-color: white;
-}
+
 .col {
   height: 300px;
   width: 300px;
@@ -65,6 +59,40 @@ a {
 nav {
   margin: 10px;
 }
+.about-me {
+  font-size: 34px;
+  line-height: 1.6;
+
+  margin-bottom: 0;
+}
+.front-end {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.mountains {
+  max-width: 350px;
+  height: auto;
+  border-radius: 5%;
+}
+.information-about-me {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 15px;
+}
+.information {
+  font-size: 16px;
+  text-align: justify;
+  margin: 5px;
+}
 @media (max-width: 425px) {
   h1 {
     font-size: 64px;
@@ -81,11 +109,7 @@ nav {
     cursor: pointer;
     color: black;
   }
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
+
   .col {
     height: 250px;
     width: 250px;
@@ -98,5 +122,15 @@ nav {
     padding-top: 20px;
     font-size: 36px;
     text-align: center;
+  }
+  .information-about-me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .text {
+    width: auto;
+    margin: 15px;
   }
 }
