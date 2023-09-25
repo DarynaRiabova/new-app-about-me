@@ -69,7 +69,33 @@ a {
   color: #6478dd;
 }
 nav {
-  margin: 10px;
+  margin: 30px 70px;
+  padding-left: 20px;
+}
+a:hover {
+  color: black;
+}
+.home {
+  padding: 20px 35px;
+  margin: 0;
+  background-color: rgb(244, 244, 252);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  padding: 20px;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 20px;
+}
+.contact1 {
+  color: rgb(93, 92, 92);
+}
+.contact1:hover {
+  color: #6478dd;
 }
 .about-me {
   font-size: 34px;
@@ -80,6 +106,7 @@ nav {
   padding: 0;
   margin: 0;
   font-size: 20px;
+  line-height: 2;
 }
 .mountains {
   max-width: 350px;
@@ -92,6 +119,8 @@ nav {
   align-items: center;
   margin-top: 40px;
   justify-content: space-evenly;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 .text {
   display: flex;
@@ -99,6 +128,8 @@ nav {
   justify-content: center;
   width: 50%;
   margin: 15px;
+  align-items: center;
+  line-height: 2;
 }
 .information {
   font-size: 16px;
@@ -118,7 +149,7 @@ h3 {
   font-size: 48px;
   margin-top: 30px;
 }
-@media (max-width: 425px) {
+@media screen and (min-width: 200px) and (max-width: 425px) {
   h1 {
     font-size: 64px;
     padding-top: 14px;
@@ -140,16 +171,101 @@ h3 {
     font-size: 36px;
     text-align: center;
   }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #6478dd;
+  }
+  nav {
+    margin: 10px 15px;
+    padding-left: 5px;
+    align-items: baseline;
+  }
+  a:hover {
+    color: black;
+  }
+  .home {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    line-height: 0cm;
+    padding: 25px 20px;
+    margin-top: 20px;
+  }
+  nav ul {
+    padding: 5px;
+    margin: 0;
+  }
+  nav li {
+    display: inline;
+    list-style: none;
+  }
+  .contact1 {
+    color: rgb(93, 92, 92);
+  }
+  .contact1:hover {
+    color: #6478dd;
+  }
+  .information-about-me {
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .text {
+    width: auto;
+    margin: 15px;
+    line-height: 2.2;
+  }
+  .mountains {
+    max-width: 300px;
+  }
 }
-@media (max-width: 700px) {
+
+@media screen and (min-width: 426px) and (max-width: 700px) {
   .information-about-me {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 10px;
   }
   .text {
     width: auto;
     margin: 15px;
+  }
+  nav {
+    margin: 30px 30px;
+    padding-left: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #6478dd;
+  }
+
+  a:hover {
+    color: black;
+  }
+  .home {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    line-height: 0cm;
+    padding: 25px 20px;
+  }
+  nav ul {
+    padding: 5px;
+    margin: 0;
+  }
+  nav li {
+    display: inline;
+    list-style: none;
+  }
+  .contact1 {
+    color: rgb(93, 92, 92);
+  }
+  .contact1:hover {
+    color: #6478dd;
   }
 }
